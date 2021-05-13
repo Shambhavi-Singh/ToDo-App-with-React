@@ -8,7 +8,7 @@ const TaskList = ({ tasks, setTasks }) => {
           <Task
             setTasks={setTasks}
             tasks={tasks}
-            task={task.task}
+            text={task.text}
             id={task.id}
             done={task.done}
           />

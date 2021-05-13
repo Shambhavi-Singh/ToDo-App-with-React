@@ -9,11 +9,11 @@ function App() {
     setTask(e.target.value);
   };
   const addTaskHandler = () => {
-    setTasks([...tasks, { task: task, done: false, id: Math.random() * 1000 }]);
+    setTasks([...tasks, { text: task, done: false, id: Math.random() * 1000 }]);
     setTask("");
   };
   return (
-    <div className="App">
+    <div className="todobox">
       <input type="text" value={task} onChange={inputHandler}></input>
       <button onClick={addTaskHandler}>Add Task</button>
       <TaskList setTasks={setTasks} tasks={tasks} />
